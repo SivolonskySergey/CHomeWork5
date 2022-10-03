@@ -1,7 +1,7 @@
 ﻿
 using myLib;
 
-void sumOfEvenIndex()
+void sumOfUnevenIndex()
 {
     Random randomSize = new Random();
     int size = randomSize.Next(5, 11);
@@ -16,7 +16,7 @@ void sumOfEvenIndex()
         }
     }
     ArrayMethods.printArray(numbers);
-    Console.WriteLine(summ);
+    Console.WriteLine($"Сумма чисел с нечетными индексами - {summ}");
 }
 
-sumOfEvenIndex();
+sumOfUnevenIndex();
